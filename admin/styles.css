@@ -1,0 +1,111 @@
+:root {
+  --sidebar-bg: #111827;
+  --accent-red: #e61e2a;
+  --header-gray: #f1f3f5;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-link {
+  color: #9ca3af;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  background-color: var(--accent-red);
+  color: white;
+}
+
+.nav-link:hover:not(.active) {
+  background-color: #1f2937;
+  color: white;
+}
+
+.top-header {
+  padding: 15px 30px;
+  margin-bottom: 25px;
+}
+
+.stat-card {
+  border: none;
+  border-radius: 12px;
+  padding: 20px;
+  transition: 0.2s;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  height: 45px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+.btn-action {
+  height: 32px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.page-section {
+  display: none;
+}
+
+.page-section.active-section {
+  display: block;
+}
+
+canvas {
+  height: 300px !important;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating i {
+  color: #fbbf24;
+  font-size: 13px;
+}
+
+.rating .count {
+  color: #6b7280;
+  margin-left: 5px;
+}
+.desktop-sidebar {
+  width: 250px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 20px;
+}
+
+@media (min-width: 991px) {
+  .main-content {
+    margin-left: 250px;
+    width: 80%;
+  }
+}
+
+@media (max-width: 991px) {
+  .desktop-sidebar {
+    display: none;
+  }
+  .main-content {
+    margin-left: 0;
+  }
+}

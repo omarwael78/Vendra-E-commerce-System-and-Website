@@ -1,0 +1,71 @@
+/* FILTERS */
+.filter-box {
+  border-radius: 14px;
+  padding: 16px;
+  top: 20px;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-group {
+  margin-bottom: 16px;
+}
+
+.filter-group .title {
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.filter-group label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 6px;
+}
+
+.price-range {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+.clear-btn {
+  width: 100%;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.clear-btn:hover {
+  transition: 0.3s ease;
+  color: #0051ff;
+  background-color: #f0f0f0;
+}
+
+/* SORT */
+.sort-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.sort-card {
+  padding: 12px 16px;
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media screen and (orientation: portrait) {
+  .form-select {
+    width: 50% !important;
+  }
+}

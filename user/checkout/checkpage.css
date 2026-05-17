@@ -1,0 +1,49 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card {
+  border-radius: 12px;
+}
+
+.form-control,
+.form-select {
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.15);
+  border-color: #86b7fe;
+}
+
+.input-group-text {
+  border-radius: 8px 0 0 8px;
+}
+
+.input-group .form-control {
+  border-radius: 0 8px 8px 0;
+}
+
+.product-img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.text-truncate-2 {
+  display: -webkit-box !important;
+  -webkit-box-orient: vertical !important;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
+  white-space: normal;
+
+  line-height: 1.5;
+  max-height: 3em;
+}
+
+.is-invalid {
+  border-color: #dc3545 !important;
+}

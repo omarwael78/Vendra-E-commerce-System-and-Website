@@ -1,0 +1,98 @@
+.login-btn {
+  border: 1px solid #cfd4da;
+  border-radius: 12px;
+}
+
+.login-btn:hover {
+  border: 1px solid #666;
+}
+
+.login-btn.active {
+  border: 2px solid #2f5bea;
+  color: #2f5bea;
+}
+
+/* ----------------------------------------------------- */
+
+.role-btn {
+  border: 1px solid #cfd4da;
+  border-radius: 12px;
+}
+
+.role-btn:hover {
+  border: 1px solid #666;
+}
+
+.role-btn.active {
+  border: 2px solid #2f5bea;
+  color: #2f5bea;
+}
+
+.input-group .form-control,
+.input-group .input-group-text {
+  border-radius: 12px;
+}
+
+.form-control:focus {
+  box-shadow: none !important;
+  border-color: #2f5bea !important;
+}
+
+.input-group:focus-within .form-control {
+  box-shadow: 0 0 0 0.15rem rgba(47, 91, 234, 0.15);
+  border-color: #2f5bea;
+}
+
+.input-group:focus-within .input-group-text {
+  border-color: #2f5bea;
+}
+
+/* ================= VALID SUCCESS STYLE ================= */
+
+.form-control.is-valid {
+  border-color: #198754 !important;
+}
+
+.form-control.is-valid:focus {
+  border-color: #198754 !important;
+  box-shadow: 0 0 0 0.15rem rgba(25, 135, 84, 0.25) !important;
+}
+
+.input-group:has(.form-control.is-valid) .input-group-text {
+  border-color: #198754 !important;
+}
+
+.valid-feedback {
+  color: #198754;
+  font-size: 0.85rem;
+}
+
+/* ================= Profile Page Styles  ================= */
+
+.profile-card {
+  border-radius: 15px;
+}
+
+.profile-avatar {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.stat-box {
+  padding: 20px;
+  border-radius: 12px;
+  transition: 0.3s;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  cursor: default;
+}
+
+.stat-box:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+}

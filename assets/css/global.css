@@ -1,0 +1,174 @@
+/* Import the font from Google */
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One:wght@400;700&display=swap");
+
+/* global.css */
+:root {
+  --font-size: 16px;
+  --background: #ffffff;
+  --foreground: oklch(0.145 0 0);
+  --card: #ffffff;
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: #030213;
+  --primary-foreground: oklch(1 0 0);
+  --secondary: oklch(0.95 0.0058 264.53);
+  --secondary-foreground: #030213;
+  --muted: #ececf0;
+  --muted-foreground: #717182;
+  --accent: #e9ebef;
+  --accent-foreground: #030213;
+  --destructive: #d4183d;
+  --destructive-foreground: #ffffff;
+  --border: rgba(0, 0, 0, 0.1);
+  --input: transparent;
+  --input-background: #f3f3f5;
+  --switch-background: #cbced4;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: #030213;
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo-circle {
+  width: 36px;
+  height: 36px;
+  background: #2563eb;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: red;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+.nav-link:hover {
+  color: #2563eb;
+}
+
+.elog {
+  font-size: 17px;
+  font-weight: bold;
+}
+/* ===== Footer ===== */
+.footer-bg {
+  background-color: #0f172a;
+}
+
+/* Footer links */
+.footer-bg a {
+  transition: color 0.2s ease;
+}
+
+.footer-bg a:hover {
+  color: #2563eb !important; /* نفس الأزرق اللي في الصورة */
+}
+
+#featuredProducts .view-all:hover {
+  cursor: pointer;
+}
+
+#featuredProducts .view-all:hover i {
+  transition: 1s;
+  transform: translate(10px);
+}
+
+.cardContainer .card img:hover {
+  transition: 1s ease;
+  transform: scale(1.1);
+}
+
+.cardContainer .card a:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  color: #3b89fd;
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+}
+
+.rating i {
+  color: #fbbf24;
+  font-size: 13px;
+}
+
+.rating .count {
+  color: #6b7280;
+  margin-left: 5px;
+}
+
+/* featured card */
+.featured-badge {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 10;
+  background: linear-gradient(135deg, #ffdf59 0%, #f7b733 100%);
+  color: #5d4037;
+  padding: 4px 12px;
+  border-radius: 50px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  overflow: hidden; /* Crucial: keeps the shine inside the badge */
+  box-shadow: 0 4px 10px rgba(247, 183, 51, 0.2);
+}
+
+/* The light streak */
+.featured-badge::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -150%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.6),
+    transparent
+  );
+  transform: skewX(-20deg);
+  animation: badgeShine 10s infinite;
+}
+
+@keyframes badgeShine {
+  0% {
+    left: -150%;
+  }
+  20% {
+    left: 150%;
+  }
+  100% {
+    left: 150%;
+  }
+}
